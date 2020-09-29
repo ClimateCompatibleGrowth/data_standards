@@ -1,1 +1,4 @@
 SALib>=1.3.11
+matplotlib
+numpy
+pandas
