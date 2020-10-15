@@ -81,3 +81,7 @@ For an explaination of u4RIA, see the paper (forthcoming).
 * Design the project with an audit in mind. How can you change your work patterns to make it easier for an external
   partners to see what you have done?
 * Comes for free with many of the steps above.
+
+## License
+
+This text is licensed under a CC-BY-4.0 Attribution license.
