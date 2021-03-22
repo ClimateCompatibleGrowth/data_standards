@@ -1,7 +1,8 @@
 # data_standards
+
 Data Standards for Energy System Planning Tools and Methodologies
 
-This project will implement the u4RIA principles. 
+This project will implement the u4RIA principles.
 
 Below I outline a number of practical implications of the 7 principles for which U4RIA is an acronym:
 
@@ -13,7 +14,9 @@ Below I outline a number of practical implications of the 7 principles for which
 6. interoperability
 7. auditability
 
-For an explaination of u4RIA, see the paper (forthcoming).
+An explaination of u4RIA is provided in the following preprint:
+
+- Howells, Mark, Jairo Quiros-Tortos, Robbie Morrison, Holger Rogner, Taco Niet, Luca Petrarulo, Will Usher, William Blyth, Guido Godínez, Luis F Victor, Jam Angulo, Franziska Bock, Eunice Ramos, Francesco Gardumi, Ludwig Hülk, Patrick Van-Hove, Estathios Peteves, Felipe de Leon, Andrea Meza, Thomas Alfstad, Constantinos Taliotis, George Partasides, Nicolina Lindblad, Benjamin Stewart, and Ashish Shrestha.  (10&nbsp;March 2021).  [*Energy system analytics and good governance — U4RIA goals of Energy Modelling for Policy Support — Preprint*](https://www.researchsquare.com/article/rs-311311/v1.pdf).  doi:[10.21203/rs.3.rs-311311/v1](https://dx.doi.org/10.21203/rs.3.rs-311311/v1).
 
 ## ubuntu (community)
 
@@ -35,10 +38,10 @@ For an explaination of u4RIA, see the paper (forthcoming).
 
 *Ensure that results can be reproduced from data and assumptions, ideally automatically*
 
-* Use a workflow management tool (such as [snakemake](https://snakemake.readthedocs.io/en/stable/)) 
+* Use a workflow management tool (such as [snakemake](https://snakemake.readthedocs.io/en/stable/))
   to automate each of the steps in the analysis
 * Document which version of each software package is required to run the analysis
-* Use an environment manager such as [miniconda](https://docs.conda.io/en/latest/miniconda.html), 
+* Use an environment manager such as [miniconda](https://docs.conda.io/en/latest/miniconda.html),
   [docker](https://www.docker.com/), or [singularity](https://sylabs.io/) to ensure that the analysis can
   be easily reused
 
@@ -47,8 +50,8 @@ For an explaination of u4RIA, see the paper (forthcoming).
 *Ensure the data, results and source code can be used by others*
 
 * Document and publish assumptions together with results
-* Publish data behind results with a permissive license allowing reuse (e.g. CC-BY 4.0)
-* Publish source code under an open-source license (e.g. MIT, Apache 2.0 etc.)
+* Publish data behind results with a permissive license allowing reuse (e.g. CC‑BY‑4.0)
+* Publish source code under an open-source license (e.g. MIT, Apache‑2.0 etc.)
 * Publish documentation on how to re-run the analysis
 * Use [semantic versioning](https://semver.org/) to tag your source code
 * Use version control e.g. [git and Github](http://github.com) to track the history of your source code
@@ -67,11 +70,11 @@ For an explaination of u4RIA, see the paper (forthcoming).
 
 * Do not use proprietary file formats to store data (such as Excel *.xlsx)
 * Where possible, use csv files, or an open-source format such as feather, HD5
-* Ideally, use [Tabular Data Packages](https://specs.frictionlessdata.io/tabular-data-package/#language) 
+* Ideally, use [Tabular Data Packages](https://specs.frictionlessdata.io/tabular-data-package/#language)
   which store data in comma-separated values (CSV) format and metadata in a JSON file
 * Store data in CSV files in long format (e.g. headers for GDP statistics should be `Country`,`Parameter`,`Year`,`Value`
   rather than `Country`,`1990`, `1995`, `2000`, `2005`, `2010`)
-* Use existing standards, for example, adopt ISO conventions for [country codes](https://github.com/datasets/country-codes), 
+* Use existing standards, for example, adopt ISO conventions for [country codes](https://github.com/datasets/country-codes),
   always use SI units
 
 ## auditability
@@ -84,4 +87,4 @@ For an explaination of u4RIA, see the paper (forthcoming).
 
 ## License
 
-This text is licensed under a CC-BY-4.0 Attribution license.
+This text is licensed under a CC‑BY‑4.0 Attribution license.
